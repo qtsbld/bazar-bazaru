@@ -123,10 +123,8 @@
     let isChanged = false;
 
     btn.addEventListener('click', () => {
-      // Запуск анимации сжатия/исчезновения
       btn.classList.add('animate-swap');
 
-      // Переключение темы и текста в середине анимации
       setTimeout(() => {
         isChanged = !isChanged;
         
@@ -139,7 +137,6 @@
         }
       }, 300);
 
-      // Удаление класса анимации после ее завершения
       setTimeout(() => {
         btn.classList.remove('animate-swap');
       }, 600);
